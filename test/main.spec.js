@@ -13,12 +13,15 @@ describe('Nuevo Juego', ()=>{
     };
 
     it('Inicialmente tiene dos jugadores', ()=>{
-
         expect(game).toBeDefined();
         expect(playerOne).toBe(playerOne);
         expect(playerTwo).toBe(playerTwo);
     });
+
     it('el juego tiene tres opciones (piedra, papel, tijeras)', ()=>{
-        expect()
+        expect(game.selection).toBeDefined();
+        expect(game.selection.piedra).toBe(eleccion.piedra);
+        expect(game.selection.tijeras).toBe(eleccion.tijeras);
+        expect(game.selection.papel).toBe(eleccion.papel);
     });
 });
